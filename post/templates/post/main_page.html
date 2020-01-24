@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" ></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+	<title>FM.Welding</title>
+	<link rel="stylesheet" href="./cookies/jquery.cookieBar.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div class="header">
+    	<div class="header_logo">
+			<p></p>
+    	</div>
+    	<div class="header_content">
+    		<a href="./index.html"><p>esileht</p></a>
+    		<a href="#" id="nav_offer"><p>Teenused</p></a>
+    		<a href="#" id="nav_about"><p>meist</p></a>
+    		<a href="#" id="nav_projects"><p>projektid</p></a>
+    		<a href="#" id="nav_contact"><p>kontakt</p></a>
+        <div class="lang_bar">
+		      <a href="./rus.html">rus</a>
+		      |
+          <a href="./eng.html">eng</a>
+        </div>
+    	</div>
+    </div>
+    <div class="burger_menu">
+    	<img class="burger_open" src="./img/burger/menu.svg" alt="MENU">
+    	<img class="burger_close" src="./img/burger/close.svg" alt="CLOSE">
+    	<div class="burger_content">
+    		<a href="./index.html"><p>esileht</p></a>
+    		<a href="#service"><p>Teenused</p></a>
+    		<a href="#about"><p>meist</p></a>
+    		<a href="./projects.html"><p>projektid</p></a>
+    		<a href="#contact"><p>kontakt</p></a>
+        <a class="burger_content_gold" href="./eng.html"><p>ENG</p></a>
+        <a class="burger_content_gold" href="./rus.html"><p>RUS</p></a>
+    	</div>
+    </div>
+    <div class="main container">
+        <div class="fullscreen-video-wrap">
+		  <video autoplay loop muted id="myVideo">
+				<source src="./img/header/welder.mov" type="video/mov">
+				<source src="./img/header/welder.webm" type="video/webm">	
+				<source src="./img/header/welder.mp4" type="video/mp4">
+		  </video>
+        </div>
+        <div class="main_overlay"></div>
+        <div class="main_content">
+          <h1>F.M Welding OÜ</h1>
+          <p></p>
+          <a class="main_btn">meist</a>
+        </div>
+      </div>
+      	<div class="service" id="service">
+      		<h1>teenused</h1>
+      		<hr>
+      	</div>
+
+      	<div class="service_wrap">
+      		<div class="service_block">
+      			<img src="./img/service/welding.jpg" alt="weld">
+      			<div class="block_descr">
+      				<h3>Keevitustööd</h3>
+      				<p>Teostame kõikvõimalikke keevitustöid – sealhulgas värviliste metallide keevitamine (alumiinium, vask, messing, titaan, roostevaba).</p>
+      			</div>
+      		</div>
+      		<div class="service_block">
+      			<img src="./img/service/check.jpeg" alt="check">
+      			<div class="block_descr">
+      				<h3>Ehituskonstruktsioonide montaaž</h3>
+      				<p>Kareduse mõõtmine, kontroll ja sellega kaasnev dokumentatsioon. Keevituse penetreerimine ja kontroll</p>
+      			</div>
+      			
+      		</div>
+      		<div class="service_block">
+      			<img src="./img/service/montage.jpg" alt="montage">
+      			<div class="block_descr">
+      				<h3>Katla- ja gaasitööd</h3>
+      				<p>Teostame nii väikseid kui suuremahulisi töid. Meie soov on luua kvaliteetseid ja kestvaid lahendusi ning realiseerida teie, kui meie kliendi, nägemusi.</p>
+      			</div>
+      			
+      		</div>
+      		<div class="service_block">
+      			<img src="./img/service/forge.jpg" alt="forge">
+      			<div class="block_descr">
+      				<h3>Visuaalkontrolli teostamine, NDT</h3>
+      				<p>Meie klientideks on ehituspoed ja kodukaupade müüjad nii Eestis kui ka välismaal.</p>
+      			</div>
+      			
+      		</div>
+
+      		<div class="service_block">
+      			<img src="./img/service/vent.jpg" alt="vent">
+      			<div class="block_descr">
+      				<h3>Konstruktsioonide valmistamine</h3>
+      				<p>Ventilatsioonisüsteemide paigaldus ja hooldus.</p>
+      			</div>
+      			
+      		</div>      	</div>
+        <div class="about" id="about">
+          <h1>meist</h1>
+          <hr>
+        </div>
+        <div class="about_content">
+          <div class="about_content__text">
+            <p>Meie väärtused: Kiirus, kvaliteet, tehnoloogilisus. Missioon: Ettevõtte areng innovatsioonide kasutuselevõtmise kaudu, keskendudes alati tarbijate vajadustele ja soovidele. Visioon: Saada metallitööstuse valdkonna ekspertide meeskonnaks</p>
+            <p>2017.aastal asutatud firma F.M Welding OÜ pakub teenuseid metallitööstuse ja sepisekunsti valdkondades.</p>
+            <p>Tänapäevased professionaalsed tööriistad, kõrge kvalifikatsiooniga spetsialistid, tingimuste ja normatiivsete ettekirjutuste range järgimine – need on kriteeriumid, mis tagavad keevitustööde õnnestumise.Välimuse esinduslikkuse säilimine keevisõmbluste kõrge tugevusteguri juures on tähtsaim tingimus, mille auto remontimise käigus ette tulevate keevitustöödega tegelev meister peab täitma. Keevitamise tehnoloogilise protsessi edukuse suudavad tagada ainult filigraanne täpsus ja professionaalne lähenemine selle kategooria tööde teostamisele.</p>
+          </div>
+          <div class="about_content__img">
+            <img src="./img/about/about.jpg" alt="about">
+          </div>
+        </div>
+      	<div class="projects" id="projects">
+      		<h1>Projektid</h1>
+      		<hr>
+      	</div>
+      	<div class="projects_content">
+      		<div class="project_block first_project">
+      			<div class="project_descr">
+      				<h1>Projekt</h1>
+      				<p></p>
+      				<a href="./projects.html"><button>Galerii</button></a>
+      			</div>
+      		</div>
+      		<div class="project_block second_project">
+      			<div class="project_descr">
+      				<h1>Projekt</h1>
+      				<p></p>
+      				<a href="./projects.html"><button>Galerii</button></a>
+      			</div>
+      		</div>
+      		<div class="project_block third_project">
+      			<div class="project_descr">
+      				<h1>Projekt</h1>
+      				<p></p>
+      				<a href="./projects.html"><button>Galerii</button></a>
+      			</div>
+      		</div>
+      		<div class="project_block fourth_project">
+      			<div class="project_descr">
+      				<h1>Projekt</h1>
+      				<p></p>
+      				<a href="./projects.html"><button>Galerii</button></a>
+      			</div>
+      		</div>
+      		<div class="project_block fourth_project">
+      			<div class="project_descr">
+      				<h1>Projekt</h1>
+      				<p></p>
+      				<a href="./projects.html"><button>Galerii</button></a>
+      			</div>
+      		</div>
+      		<div class="project_block fourth_project">
+      			<div class="project_descr">
+      				<h1>Projekt</h1>
+      				<p></p>
+      				<a href="./projects.html"><button>Galerii</button></a>
+      			</div>
+      		</div>
+      	</div>
+      	<div class="clients">
+      		<h1>meie kliendid</h1>
+      		<hr>
+      	</div>
+      	<div class="clients_descr">
+      		<img src="./img/clients/merko.png" alt="merko">
+      		<img src="./img/clients/maru.png" alt="maru">
+      		<img src="./img/clients/adven.png" alt="adven">
+      		<img src="./img/clients/logicon.png" alt="logicon">
+      		<img src="./img/clients/tavepro.png" alt="tavepro">
+      		<img src="./img/clients/moodul.png" alt="moodul">
+      	</div>
+      	<div class="contact" id="contact">
+      		<h1>kontakt</h1>
+     		<hr>
+      	</div>
+      	<div class="contact_descr">
+      		<div class="mapouter"><div class="gmap_canvas"><iframe width="900" height="390" id="gmap_canvas" src="https://maps.google.com/maps?q=Tornim%C3%A4e%205%2C%2010145%20Tallinn&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.bitgeeks.net">bitgeeks</a></div><style>.mapouter{position:relative;text-align:right;height:390px;width:900px;}.gmap_canvas {overflow:hidden;background:none!important;height:390px;width:900px;}</style></div>
+      	</div>
+
+      	<div class="contact_form">
+      		<div class="contact_fields">
+      			<h3>Vastame Teie küsimustele</h3>
+      			<p>Hea meelega vastame Teie küsimustele telefoni teel: <br> <span>+372 56 906 471</span> . <br>Samuti võite saata oma küsimused allpool oleva vormi abil.<br></p>
+           <!-- <form class="form" id="form" name="form">
+      			   <input type="text" placeholder="Имя *" name="name" required="">
+      			   <input type="text" placeholder="E-Mail *" name="mail" required="">
+      			   <textarea name="" id="" cols="30" rows="10" placeholder="Сообщение" name="message"></textarea>
+      			   <button>Отправить</button>
+            </form>
+            -->
+            
+            <form class="form" id="form" name="form">
+              <input class="wow animated slideInLeft" type="text" placeholder="Nimi" name="name" required>
+              <input class="wow animated slideInLeft" type="text" placeholder="e-mail" name="mail" required>
+              <textarea class="wow animated slideInLeft" type="text" cols="30" rows="10" placeholder="Kommentaar" name="message" required></textarea>
+              <button class="form-button contact_button wow animated slideInLeft">Esita</button>
+            </form>
+			<div class="mobile_info">
+				<p>Võidujooksu 7a </p>
+				<p>Tornimäe 5, 10145 Tallinn</p>
+				<p>info@fmwelding.ee</p>
+			</div>
+      		</div>
+      		<div class="contact_info">
+      			<h3>Kontakt</h3>
+      			<p></p>
+				<p>Tornimäe 5, 10145 Tallinn</p>
+				<p>info@fmwelding.ee</p>
+				<p>+372 56 906 471</p>
+				<br>
+				<h3>Soovite teha koostööd?</h3>
+				<p>Palun saatke oma soovid ja ettepanekud aadressil:&nbsp;<a href="">info@fmwelding.ee</a></p>
+				<br>
+				<hr>
+				<br>
+				<h4>Helistage:<a href=""> +372 56 906 471</a></h4>
+      		</div>
+      	</div>
+      	<div class="footer">
+          <div class="overlay js-overlay-thank-you">
+            <div class="popup js-thank-you">
+              <h2>Tänud!</h2>
+              <div class="close-popup js-close-thank-you"></div>
+            </div>
+          </div>
+      		<p>© 2019 «F.M. Welding OÜ» Kõik õigused on kaitstud.</p>
+      		<img src="./img/footer/fb.svg" alt="facebook">
+      	</div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      	<script
+      	  src="https://code.jquery.com/jquery-3.4.1.min.js"
+      	  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      	  crossorigin="anonymous">
+      	</script>
+      	<script src="./js/script.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script src="./cookies/jquery.cookieBar.min.js"></script>
+		<script src="./cookies/jquery.cookieBar.js"></script>
+		<script>
+			$(function() {
+				
+
+				$.cookieBar({
+					style: 'bottom',
+					language: 'et'
+				});
+
+			});
+		</script>
+</body>
+</html>
