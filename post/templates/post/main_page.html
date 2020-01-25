@@ -1,36 +1,56 @@
-<!DOCTYPE html>
 {% load static %}
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" ></script>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
-	<title>FM.Welding</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" ></script>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+	<title>Weldex Group OÜ</title>
 	<link rel="stylesheet" href="./cookies/jquery.cookieBar.min.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
     <div class="header">
-    	<div class="header_logo">
-			<p></p>
-    	</div>
-    	<div class="header_content">
-    		<a href="./index.html"><p>esileht</p></a>
-    		<a href="#" id="nav_offer"><p>Teenused</p></a>
-    		<a href="#" id="nav_about"><p>meist</p></a>
-    		<a href="#" id="nav_projects"><p>projektid</p></a>
-    		<a href="#" id="nav_contact"><p>kontakt</p></a>
-        <div class="lang_bar">
-		      <a href="./rus.html">rus</a>
-		      |
-          <a href="./eng.html">eng</a>
-        </div>
-    	</div>
-    </div>
-    <div class="burger_menu">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-2">
+					<div class="header_logo">
+						<p>Weldex</p>
+					</div>
+				</div>
+				<div class="col-md-8">
+					<div class="header_content">
+						<a href="./index.html"><p>esileht</p></a>
+						<a href="#" id="nav_offer"><p>Teenused</p></a>
+						<a href="#" id="nav_about"><p>meist</p></a>
+						<a href="#" id="nav_projects"><p>projektid</p></a>
+						<a href="#" id="nav_contact"><p>kontakt</p></a>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<div class="header_select">
+						<select name="lang" id="lang">
+							<option value="est">EST</option>
+							<option value="rus">RUS</option>
+							<option value="eng">ENG</option>
+						</select>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="hero">
+		<div class="container-fluid">
+			<div class="row">
+				<h1>Weldex Group OÜ</h1>
+				<button>meist</button>
+			</div>
+		</div>
+	</div>
+    <!-- <div class="burger_menu">
     	<img class="burger_open" src="./img/burger/menu.svg" alt="MENU">
     	<img class="burger_close" src="./img/burger/close.svg" alt="CLOSE">
     	<div class="burger_content">
@@ -42,129 +62,67 @@
         <a class="burger_content_gold" href="./eng.html"><p>ENG</p></a>
         <a class="burger_content_gold" href="./rus.html"><p>RUS</p></a>
     	</div>
-    </div>
-    <div class="main container">
-        <div class="fullscreen-video-wrap">
-		  <video autoplay loop muted id="myVideo">
-				<source src="./img/header/welder.mov" type="video/mov">
-				<source src="./img/header/welder.webm" type="video/webm">	
-				<source src="./img/header/welder.mp4" type="video/mp4">
-		  </video>
-        </div>
-        <div class="main_overlay"></div>
-        <div class="main_content">
-          <h1>F.M Welding OÜ</h1>
-          <p></p>
-          <a class="main_btn">meist</a>
-        </div>
-      </div>
-      	<div class="service" id="service">
-      		<h1>teenused</h1>
-      		<hr>
-      	</div>
+    </div> -->
+	<div class="service">
+			<div class="container">
+					<div class="title" id="service">
+							<h1>Teenused</h1>
+							<hr>
+						</div>
+					<div class="row">
+						<div class="col-md-4">
+							<div class="service_block">
+							<div class="service_block_descr">
+								<h5>Keevitustööd</h5>
+								<p>Teostame kõikvõimalikke keevitustöid – sealhulgas värviliste metallide keevitamine (alumiinium, vask, messing, titaan, roostevaba).</p>
+							</div>
+							<img src="#" alt="Weldex Group OÜ">
+						</div>
+						</div>
+					</div>
+				</div>
+	</div>
 
-      	<div class="service_wrap">
-      		<div class="service_block">
-      			<img src="./img/service/welding.jpg" alt="weld">
-      			<div class="block_descr">
-      				<h3>Keevitustööd</h3>
-      				<p>Teostame kõikvõimalikke keevitustöid – sealhulgas värviliste metallide keevitamine (alumiinium, vask, messing, titaan, roostevaba).</p>
-      			</div>
-      		</div>
-      		<div class="service_block">
-      			<img src="./img/service/check.jpeg" alt="check">
-      			<div class="block_descr">
-      				<h3>Ehituskonstruktsioonide montaaž</h3>
-      				<p>Kareduse mõõtmine, kontroll ja sellega kaasnev dokumentatsioon. Keevituse penetreerimine ja kontroll</p>
-      			</div>
-      			
-      		</div>
-      		<div class="service_block">
-      			<img src="./img/service/montage.jpg" alt="montage">
-      			<div class="block_descr">
-      				<h3>Katla- ja gaasitööd</h3>
-      				<p>Teostame nii väikseid kui suuremahulisi töid. Meie soov on luua kvaliteetseid ja kestvaid lahendusi ning realiseerida teie, kui meie kliendi, nägemusi.</p>
-      			</div>
-      			
-      		</div>
-      		<div class="service_block">
-      			<img src="./img/service/forge.jpg" alt="forge">
-      			<div class="block_descr">
-      				<h3>Visuaalkontrolli teostamine, NDT</h3>
-      				<p>Meie klientideks on ehituspoed ja kodukaupade müüjad nii Eestis kui ka välismaal.</p>
-      			</div>
-      			
-      		</div>
-
-      		<div class="service_block">
-      			<img src="./img/service/vent.jpg" alt="vent">
-      			<div class="block_descr">
-      				<h3>Konstruktsioonide valmistamine</h3>
-      				<p>Ventilatsioonisüsteemide paigaldus ja hooldus.</p>
-      			</div>
-      			
-      		</div>      	</div>
-        <div class="about" id="about">
-          <h1>meist</h1>
-          <hr>
-        </div>
-        <div class="about_content">
-          <div class="about_content__text">
-            <p>Meie väärtused: Kiirus, kvaliteet, tehnoloogilisus. Missioon: Ettevõtte areng innovatsioonide kasutuselevõtmise kaudu, keskendudes alati tarbijate vajadustele ja soovidele. Visioon: Saada metallitööstuse valdkonna ekspertide meeskonnaks</p>
-            <p>2017.aastal asutatud firma F.M Welding OÜ pakub teenuseid metallitööstuse ja sepisekunsti valdkondades.</p>
-            <p>Tänapäevased professionaalsed tööriistad, kõrge kvalifikatsiooniga spetsialistid, tingimuste ja normatiivsete ettekirjutuste range järgimine – need on kriteeriumid, mis tagavad keevitustööde õnnestumise.Välimuse esinduslikkuse säilimine keevisõmbluste kõrge tugevusteguri juures on tähtsaim tingimus, mille auto remontimise käigus ette tulevate keevitustöödega tegelev meister peab täitma. Keevitamise tehnoloogilise protsessi edukuse suudavad tagada ainult filigraanne täpsus ja professionaalne lähenemine selle kategooria tööde teostamisele.</p>
-          </div>
-          <div class="about_content__img">
-            <img src="./img/about/about.jpg" alt="about">
-          </div>
-        </div>
-      	<div class="projects" id="projects">
-      		<h1>Projektid</h1>
-      		<hr>
-      	</div>
-      	<div class="projects_content">
-      		<div class="project_block first_project">
-      			<div class="project_descr">
-      				<h1>Projekt</h1>
-      				<p></p>
-      				<a href="./projects.html"><button>Galerii</button></a>
-      			</div>
-      		</div>
-      		<div class="project_block second_project">
-      			<div class="project_descr">
-      				<h1>Projekt</h1>
-      				<p></p>
-      				<a href="./projects.html"><button>Galerii</button></a>
-      			</div>
-      		</div>
-      		<div class="project_block third_project">
-      			<div class="project_descr">
-      				<h1>Projekt</h1>
-      				<p></p>
-      				<a href="./projects.html"><button>Galerii</button></a>
-      			</div>
-      		</div>
-      		<div class="project_block fourth_project">
-      			<div class="project_descr">
-      				<h1>Projekt</h1>
-      				<p></p>
-      				<a href="./projects.html"><button>Galerii</button></a>
-      			</div>
-      		</div>
-      		<div class="project_block fourth_project">
-      			<div class="project_descr">
-      				<h1>Projekt</h1>
-      				<p></p>
-      				<a href="./projects.html"><button>Galerii</button></a>
-      			</div>
-      		</div>
-      		<div class="project_block fourth_project">
-      			<div class="project_descr">
-      				<h1>Projekt</h1>
-      				<p></p>
-      				<a href="./projects.html"><button>Galerii</button></a>
-      			</div>
-      		</div>
+	<div class="about">
+		<div class="container">
+			<div class="title" id="about">
+				<h1>meist</h1>
+				<hr>
+			</div>
+			<div class="row">
+				<div class="col-md-8">
+					<div class="about_descr">
+						<p>Meie väärtused: Kiirus, kvaliteet, tehnoloogilisus. Missioon: Ettevõtte areng innovatsioonide kasutuselevõtmise kaudu, keskendudes alati tarbijate vajadustele ja soovidele. Visioon: Saada metallitööstuse valdkonna ekspertide meeskonnaks</p>
+						<p>2017.aastal asutatud firma F.M Welding OÜ pakub teenuseid metallitööstuse ja sepisekunsti valdkondades.</p>
+						<p>Tänapäevased professionaalsed tööriistad, kõrge kvalifikatsiooniga spetsialistid, tingimuste ja normatiivsete ettekirjutuste range järgimine – need on kriteeriumid, mis tagavad keevitustööde õnnestumise.Välimuse esinduslikkuse säilimine keevisõmbluste kõrge tugevusteguri juures on tähtsaim tingimus, mille auto remontimise käigus ette tulevate keevitustöödega tegelev meister peab täitma. Keevitamise tehnoloogilise protsessi edukuse suudavad tagada ainult filigraanne täpsus ja professionaalne lähenemine selle kategooria tööde teostamisele.</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="about_img">
+						<img src="#" alt="Weldex Grop OÜ">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+      	<div class="project">
+			  <div class="container">
+					<div class="title" id="projects">
+						<h1>Projektid</h1>
+						<hr>
+					</div>
+				  <div class="row">
+					  <div class="col-md-3">
+						<div class="project_block">
+							<div class="project_block_descr">
+								<h5>Projekt</h5>
+								<p></p>
+								<a href="./projects.html"><button>Galerii</button></a>
+							</div>
+						</div>
+					  </div>
+				  </div>
+			  </div>
       	</div>
       	<div class="clients">
       		<h1>meie kliendid</h1>
