@@ -1,7 +1,5 @@
     {% extends 'post/base.html' %}
     {% block content %}
-    {% for post in posts %}
-    	{{ posts }}
     	<div class="hero">
     		<div class="container-fluid">
     			<div class="row">
@@ -30,15 +28,17 @@
     							<hr>
     						</div>
     					<div class="row">
+                        {% for post in posts %}
     						<div class="col-md-4">
     							<div class="service_block">
     							<div class="service_block_descr">
-    								<h5>Keevitustööd</h5>
-    								<p>Teostame kõikvõimalikke keevitustöid – sealhulgas värviliste metallide keevitamine (alumiinium, vask, messing, titaan, roostevaba).</p>
+    								<h5>{{ post.title }}</h5>
+    								<p>{{ post.text }}</p>
     							</div>
-    							<img src="#" alt="Weldex Group OÜ">
+    							<img src="{{ post.image.url}}" alt="{{ post.title }}">
     						</div>
     						</div>
+                    {% endfor %}
     					</div>
     				</div>
     	</div>
@@ -144,5 +144,4 @@
           		</div>
           	</div>
           	
-    {% endfor %}
 {% endblock %}
