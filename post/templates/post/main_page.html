@@ -29,13 +29,13 @@
     						</div>
     					<div class="row">
                         {% for post in posts %}
-    						<div class="col-md-4">
+    						<div class="col-xs-12 col-sm-6 col-md-4">
     							<div class="service_block">
     							<div class="service_block_descr">
     								<h5>{{ post.title }}</h5>
     								<p>{{ post.text }}</p>
+									<img src="{{ post.image.url}}" alt="{{ post.title }}">
     							</div>
-    							<img src="{{ post.image.url}}" alt="{{ post.title }}">
     						</div>
     						</div>
                     {% endfor %}
@@ -85,63 +85,72 @@
     			  </div>
           	</div>
           	<div class="clients">
-          		<h1>meie kliendid</h1>
-          		<hr>
+          		<div class="container">
+						<div class="title">
+							<h1>Meie kliendid</h1>
+							<hr>
+						</div>
+					  <div class="row">
+							<div class="col-md-12">
+								<div class="clients_descr">
+									<img src="./img/clients/merko.png" alt="merko">
+									<img src="./img/clients/maru.png" alt="maru">
+									<img src="./img/clients/adven.png" alt="adven">
+									<img src="./img/clients/logicon.png" alt="logicon">
+									<img src="./img/clients/tavepro.png" alt="tavepro">
+									<img src="./img/clients/moodul.png" alt="moodul">
+								</div>
+							</div>
+					  </div>
+				  </div>
           	</div>
-          	<div class="clients_descr">
-          		<img src="./img/clients/merko.png" alt="merko">
-          		<img src="./img/clients/maru.png" alt="maru">
-          		<img src="./img/clients/adven.png" alt="adven">
-          		<img src="./img/clients/logicon.png" alt="logicon">
-          		<img src="./img/clients/tavepro.png" alt="tavepro">
-          		<img src="./img/clients/moodul.png" alt="moodul">
-          	</div>
-          	<div class="contact" id="contact">
-          		<h1>kontakt</h1>
-         		<hr>
-          	</div>
-          	<div class="contact_descr">
-          		<div class="mapouter"><div class="gmap_canvas"><iframe width="900" height="390" id="gmap_canvas" src="https://maps.google.com/maps?q=Tornim%C3%A4e%205%2C%2010145%20Tallinn&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.bitgeeks.net">bitgeeks</a></div><style>.mapouter{position:relative;text-align:right;height:390px;width:900px;}.gmap_canvas {overflow:hidden;background:none!important;height:390px;width:900px;}</style></div>
-          	</div>
-    
-          	<div class="contact_form">
-          		<div class="contact_fields">
-          			<h3>Vastame Teie küsimustele</h3>
-          			<p>Hea meelega vastame Teie küsimustele telefoni teel: <br> <span>+372 56 906 471</span> . <br>Samuti võite saata oma küsimused allpool oleva vormi abil.<br></p>
-               <!-- <form class="form" id="form" name="form">
-          			   <input type="text" placeholder="Имя *" name="name" required="">
-          			   <input type="text" placeholder="E-Mail *" name="mail" required="">
-          			   <textarea name="" id="" cols="30" rows="10" placeholder="Сообщение" name="message"></textarea>
-          			   <button>Отправить</button>
-                </form>
-                -->
-                
-                <form class="form" id="form" name="form">
-                  <input class="wow animated slideInLeft" type="text" placeholder="Nimi" name="name" required>
-                  <input class="wow animated slideInLeft" type="text" placeholder="e-mail" name="mail" required>
-                  <textarea class="wow animated slideInLeft" type="text" cols="30" rows="10" placeholder="Kommentaar" name="message" required></textarea>
-                  <button class="form-button contact_button wow animated slideInLeft">Esita</button>
-                </form>
-    			<div class="mobile_info">
-    				<p>Võidujooksu 7a </p>
-    				<p>Tornimäe 5, 10145 Tallinn</p>
-    				<p>info@fmwelding.ee</p>
-    			</div>
-          		</div>
-          		<div class="contact_info">
-          			<h3>Kontakt</h3>
-          			<p></p>
-    				<p>Tornimäe 5, 10145 Tallinn</p>
-    				<p>info@fmwelding.ee</p>
-    				<p>+372 56 906 471</p>
-    				<br>
-    				<h3>Soovite teha koostööd?</h3>
-    				<p>Palun saatke oma soovid ja ettepanekud aadressil:&nbsp;<a href="">info@fmwelding.ee</a></p>
-    				<br>
-    				<hr>
-    				<br>
-    				<h4>Helistage:<a href=""> +372 56 906 471</a></h4>
-          		</div>
-          	</div>
+			<div class="contanct">
+				<div class="container">
+					<div class="title">
+						<h1>kontakt</h1>
+						<hr>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="contact_descr">
+								<div class="mapouter"><div class="gmap_canvas"><iframe width="900" height="390" id="gmap_canvas" src="https://maps.google.com/maps?q=Tornim%C3%A4e%205%2C%2010145%20Tallinn&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.bitgeeks.net">bitgeeks</a></div><style>.mapouter{position:relative;text-align:right;height:390px;width:900px;}.gmap_canvas {overflow:hidden;background:none!important;height:390px;width:900px;}</style></div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="contact_fields">
+								<h3>Vastame Teie küsimustele</h3>
+								<p>Hea meelega vastame Teie küsimustele telefoni teel: <br> <span>+372 56 906 471</span> . <br>Samuti võite saata oma küsimused allpool oleva vormi abil.<br></p>
+							
+							<form class="form" id="form" name="form">
+							<input class="wow animated slideInLeft" type="text" placeholder="Nimi" name="name" required>
+							<input class="wow animated slideInLeft" type="text" placeholder="e-mail" name="mail" required>
+							<textarea class="wow animated slideInLeft" type="text" cols="30" rows="10" placeholder="Kommentaar" name="message" required></textarea>
+							<button class="form-button contact_button wow animated slideInLeft">Esita</button>
+							</form>
+						</div>
+						</div>
+						<div class="col-md-6">
+							<div class="mobile_info">
+								<p>Võidujooksu 7a </p>
+								<p>Tornimäe 5, 10145 Tallinn</p>
+								<p>info@fmwelding.ee</p>
+							</div>
+							<div class="contact_info">
+								<h3>Kontakt</h3>
+								<p></p>
+							<p>Tornimäe 5, 10145 Tallinn</p>
+							<p>info@fmwelding.ee</p>
+							<p>+372 56 906 471</p>
+							<br>
+							<h3>Soovite teha koostööd?</h3>
+							<p>Palun saatke oma soovid ja ettepanekud aadressil:&nbsp;<a href="">info@fmwelding.ee</a></p>
+							<br>
+							<hr>
+							<br>
+							<h4>Helistage:<a href=""> +372 56 906 471</a></h4>
+							</div>
+						</div>
+				</div>
+			</div>
           	
 {% endblock %}

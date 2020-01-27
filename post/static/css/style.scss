@@ -9,7 +9,9 @@ body, * {
         font-size: 36px;
     }
   }
-
+  .active {
+    color: #FFC100 !important;
+  }
   .container {
       padding-bottom: 50px;
   }
@@ -58,7 +60,7 @@ body, * {
     &_content {    
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
         a {
             text-decoration: none;
             color: #fff;
@@ -80,6 +82,17 @@ body, * {
     &_select {
         line-height: 64px;
         font-size: 14px;
+        span {
+          color: #fff;
+        }
+        a {
+          color: #fff;
+          &:hover {
+            color: #FFC100;
+            text-decoration: none;
+            transition: 0.4s;
+          }
+        }
     }
   }
 //   .burger_menu {
@@ -146,24 +159,32 @@ body, * {
     flex-wrap: wrap;
     flex-direction: column;
     align-content: center;
+    height: auto;
     &_block {
-        height: 300px;
         width: 100%;
-        background-color:#C6C6C6;
+        margin-bottom: 30px;
+        position: relative;
         
         img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+          width: 100%;
+          height: 150px;
+          position: absolute;
+          bottom: 0;
+          left: 0;
         }
         &_descr {
             background-color: #F1F3F4;
             color: #1E2D3B;
-            padding: 10px 20px;
-            min-height: 170px;
+            padding: 20px 30px;
+            min-height: 320px;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: flex-start;
+            box-shadow: 0 7px 14px rgba(0,0,0,0.17), 0 5px 5px rgba(0,0,0,0.11);
+            &:hover {
+              box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+              transition: 0.4s;
+            }
           
             h5 {
               color: #3D5975;
@@ -234,21 +255,7 @@ body, * {
     flex-direction: column;
     align-content: center;
     text-transform: uppercase;
-  
-    h1 {
-      text-align: center;
-      font-size: 50px;
-      color: #1E2D3B;
-      margin-top: 70px;
-    }
-  
-    hr {
-      width: 100px;
-      min-height: 10px;
-      background-color: #FFC100;
-      border: none;
-      margin-bottom: 5%;
-    }
+
   }
   
   .clients_descr {
@@ -269,35 +276,6 @@ body, * {
     }
   }
   
-  .contact {
-    min-height: 20vh;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-content: center;
-    text-transform: uppercase;
-  
-    h1 {
-      font-size: 50px;
-      color: #1E2D3B;
-      margin-top: 70px;
-    }
-  
-    hr {
-      width: 100px;
-      min-height: 10px;
-      border: none;
-      margin-bottom: 5%;
-      background-color: #FFC100;
-    }
-  }
-  
-  .contact_descr {
-    min-height: 60vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
   
   .mapouter {
     width: 70%;

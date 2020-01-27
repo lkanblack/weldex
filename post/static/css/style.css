@@ -12,6 +12,10 @@ body h1, * h1 {
   font-size: 36px;
 }
 
+.active {
+  color: #FFC100 !important;
+}
+
 .container {
   padding-bottom: 50px;
 }
@@ -83,9 +87,9 @@ body h1, * h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .header_content a {
@@ -113,6 +117,21 @@ body h1, * h1 {
 .header_select {
   line-height: 64px;
   font-size: 14px;
+}
+
+.header_select span {
+  color: #fff;
+}
+
+.header_select a {
+  color: #fff;
+}
+
+.header_select a:hover {
+  color: #FFC100;
+  text-decoration: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .hero {
@@ -172,26 +191,28 @@ body h1, * h1 {
           flex-direction: column;
   -ms-flex-line-pack: center;
       align-content: center;
+  height: auto;
 }
 
 .service_block {
-  height: 300px;
   width: 100%;
-  background-color: #C6C6C6;
+  margin-bottom: 30px;
+  position: relative;
 }
 
 .service_block img {
   width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  height: 150px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .service_block_descr {
   background-color: #F1F3F4;
   color: #1E2D3B;
-  padding: 10px 20px;
-  min-height: 170px;
+  padding: 20px 30px;
+  min-height: 320px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -199,9 +220,18 @@ body h1, * h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-shadow: 0 7px 14px rgba(0, 0, 0, 0.17), 0 5px 5px rgba(0, 0, 0, 0.11);
+          box-shadow: 0 7px 14px rgba(0, 0, 0, 0.17), 0 5px 5px rgba(0, 0, 0, 0.11);
+}
+
+.service_block_descr:hover {
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .service_block_descr h5 {
@@ -291,21 +321,6 @@ body h1, * h1 {
   text-transform: uppercase;
 }
 
-.clients h1 {
-  text-align: center;
-  font-size: 50px;
-  color: #1E2D3B;
-  margin-top: 70px;
-}
-
-.clients hr {
-  width: 100px;
-  min-height: 10px;
-  background-color: #FFC100;
-  border: none;
-  margin-bottom: 5%;
-}
-
 .clients_descr {
   min-height: 30vh;
   background-color: #F7F5F5;
@@ -329,49 +344,6 @@ body h1, * h1 {
 
 .clients_descr img:hover {
   opacity: 0.5;
-}
-
-.contact {
-  min-height: 20vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  text-transform: uppercase;
-}
-
-.contact h1 {
-  font-size: 50px;
-  color: #1E2D3B;
-  margin-top: 70px;
-}
-
-.contact hr {
-  width: 100px;
-  min-height: 10px;
-  border: none;
-  margin-bottom: 5%;
-  background-color: #FFC100;
-}
-
-.contact_descr {
-  min-height: 60vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .mapouter {
