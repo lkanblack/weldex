@@ -6,3 +6,7 @@ from .models import Post
 def post_list(request):
     posts = Post.objects.all()
     return render(request, 'post/main_page.html', {'posts': posts})
+    
+def gallery(request):
+    return render(request, 'post/gallery.html', {})
+    
