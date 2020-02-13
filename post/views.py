@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.utils import timezone
 from .models import Post
+from .models import Gallery
 
 # Create your views here.
 def post_list(request):
@@ -8,5 +9,6 @@ def post_list(request):
     return render(request, 'post/main_page.html', {'posts': posts})
     
 def gallery(request):
-    return render(request, 'post/gallery.html', {})
-    
+    gallerys = Gallery.objects.all()
+    return render(request, 'post/gallery.html', {'gallerys': gallerys})
+

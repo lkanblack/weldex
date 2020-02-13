@@ -3,16 +3,14 @@
     <div class="gallery">
       	<div class="container-fluid">
           <div class="row">
-              <div class="col-md-4">
-                  <a data-fancybox="gallery" href="https://www.metalsupermarkets.co.uk/wp-content/uploads/2019/02/What-type-of-welding-is-used-for-aluminium.jpg">
-                      <img src="https://www.metalsupermarkets.co.uk/wp-content/uploads/2019/02/What-type-of-welding-is-used-for-aluminium.jpg">
-                  </a>
-              </div>
-              <div class="col-md-4">
-                  <a data-fancybox="gallery" href="https://www.metalsupermarkets.co.uk/wp-content/uploads/2019/02/What-type-of-welding-is-used-for-aluminium.jpg">
-                      <img src="https://www.metalsupermarkets.co.uk/wp-content/uploads/2019/02/What-type-of-welding-is-used-for-aluminium.jpg">
-                  </a>
-              </div>
+              {% for gallerys in gallerys %}
+                  <div class="col-md-4">
+                      <a data-fancybox="gallery" href="{{ gallerys.image.url}}">
+                          <img src="{{ gallerys.image.url}}" alt="{{ gallerys.title }}">
+                      </a>
+                  </div>
+              {% endfor %}
+                  
           </div>
       </div>
     </div>
