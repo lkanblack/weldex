@@ -1,6 +1,6 @@
     {% extends 'post/base.html' %}
     {% block content %}
-    	<div class="hero">
+    	<div class="hero" id="hero">
     		<div class="container-fluid">
     			<div class="row">
     				<h1>Weldex Group OÜ</h1>
@@ -21,7 +21,7 @@
             <a class="burger_content_gold" href="./rus.html"><p>RUS</p></a>
         	</div>
         </div> -->
-    	<div class="service">
+    	<div class="service" id="service">
     			<div class="container">
     					<div class="title" id="service">
     							<h1>Teenused</h1>
@@ -43,7 +43,7 @@
     				</div>
     	</div>
     
-    	<div class="about">
+    	<div class="about" id="about">
     		<div class="container">
     			<div class="title" id="about">
     				<h1>meist</h1>
@@ -65,43 +65,43 @@
     			</div>
     		</div>
     	</div>
-          	<div class="project">
-    			  <div class="container">
-    					<div class="title" id="projects">
-    						<h1>Projektid</h1>
-    						<hr>
-    					</div>
-    				  <div class="row">
-    					  <div class="col-md-12">
-    						<div class="project_block">
-    								<a href="{% url 'gallery' %}"><button>Ava Galerii</button></a>
-    						</div>
-    					  </div>
-    				  </div>
-    			  </div>
-          	</div>
-          	<div class="clients">
-          		<div class="container">
-						<div class="title">
-							<h1>Meie kliendid</h1>
-							<hr>
+		<div class="project" id="project">
+				<div class="container">
+					<div class="title" id="projects">
+						<h1>Projektid</h1>
+						<hr>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+						<div class="project_block">
+								<a href="{% url 'gallery' %}"><button>Ava Galerii</button></a>
 						</div>
-					  <div class="row">
-							<div class="col-md-12">
-								<div class="clients_descr">
-									<img src="./img/clients/merko.png" alt="merko">
-									<img src="./img/clients/maru.png" alt="maru">
-									<img src="./img/clients/adven.png" alt="adven">
-									<img src="./img/clients/logicon.png" alt="logicon">
-									<img src="./img/clients/tavepro.png" alt="tavepro">
-									<img src="./img/clients/moodul.png" alt="moodul">
-								</div>
+						</div>
+					</div>
+				</div>
+		</div>
+		<div class="clients" id="clients">
+			<div class="container">
+					<div class="title">
+						<h1>Meie kliendid</h1>
+						<hr>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="clients_descr">
+								<img src="../../static/img/clients/merko.png" alt="merko">
+								<img src="../../static/img/clients/maru.png" alt="maru">
+								<img src="../../static/img/clients/adven.png" alt="adven">
+								<img src="../../static/img/clients/logicon.png" alt="logicon">
+								<img src="../../static/img/clients/tavepro.png" alt="tavepro">
+								<img src="../../static/img/clients/moodul.png" alt="moodul">
 							</div>
-					  </div>
-				  </div>
-          	</div>
-			<div class="contanct">
-				<div class="container-fluid">
+						</div>
+					</div>
+				</div>
+		</div>
+		<div class="contact" id="contact">
+			<div class="container-fluid">
 					<div class="title">
 						<h1>kontakt</h1>
 						<hr>
@@ -151,5 +151,6 @@
 						</div>
 					</div>
 			</div>
+		</div>
           	
 {% endblock %}

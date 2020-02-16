@@ -9,6 +9,30 @@ body, * {
         font-size: 36px;
     }
   }
+  .gallery {
+    padding: 100px 0px 50px 0;
+    img {
+      width: 100%;
+    }
+    h7 {
+      color: #1E2D3B;
+    }
+    p {
+      color: #1E2D3B;
+    }
+    a {
+      &:hover {
+        text-decoration: none;
+        
+        h7, p {
+          color:#FFC100;
+        }
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+  }
   .active {
     color: #FFC100 !important;
   }
@@ -56,6 +80,11 @@ body, * {
             line-height: 64px;
             font-size: 30px;
         }
+        a {
+          &:hover {
+            text-decoration: none;
+          }
+        }
     }
     &_content {    
         display: flex;
@@ -72,6 +101,9 @@ body, * {
                 text-decoration: none;
                 color: #FFC100;
                 transition: 0.3s;
+            }
+            &:focus {
+              outline: none;
             }
         }
         p:hover {
@@ -129,6 +161,8 @@ body, * {
 .hero {
     height: 100vh;
     background-color:#3D5975;
+    background: url(../img/main_bg.jpg) center no-repeat;
+    background-size: cover;
     display: flex;
     align-items: center;
     color: #fff;
@@ -140,15 +174,15 @@ body, * {
     }
     button {
         border: none;
-        color: #fff;
-        background-color:#FFC100;
+        color: #FFC100;
+        background-color: #1E2D3B;
         padding: 10px 20px;
         text-transform: uppercase;
         border-radius: 6px;
         &:hover {
             transition: 0.3s;
-            background-color: #1E2D3B;
-            color: #FFC100;
+            background-color:#FFC100;
+            color: #fff;
         }
     }
     
@@ -233,6 +267,7 @@ body, * {
           background: none;
           &:hover {
             color: #fff;
+            
           }
         }
 

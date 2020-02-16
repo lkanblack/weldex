@@ -1,11 +1,3 @@
-.gallery {
-    padding: 100px 0px;
-}
-.gallery img {
-    height: 250px;
-    width: 100%;
-}
-
 body, * {
   margin: 0;
   font-family: 'Roboto', sans-serif;
@@ -18,6 +10,34 @@ body p, * p {
 
 body h1, * h1 {
   font-size: 36px;
+}
+
+.gallery {
+  padding: 100px 0px 50px 0;
+}
+
+.gallery img {
+  width: 100%;
+}
+
+.gallery h7 {
+  color: #1E2D3B;
+}
+
+.gallery p {
+  color: #1E2D3B;
+}
+
+.gallery a:hover {
+  text-decoration: none;
+}
+
+.gallery a:hover h7, .gallery a:hover p {
+  color: #FFC100;
+}
+
+.gallery a:focus {
+  outline: none;
 }
 
 .active {
@@ -88,6 +108,10 @@ body h1, * h1 {
   font-size: 30px;
 }
 
+.header_logo a:hover {
+  text-decoration: none;
+}
+
 .header_content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -114,6 +138,10 @@ body h1, * h1 {
   color: #FFC100;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+.header_content a:focus {
+  outline: none;
 }
 
 .header_content p:hover {
@@ -145,6 +173,8 @@ body h1, * h1 {
 .hero {
   height: 100vh;
   background-color: #3D5975;
+  background: url(../img/main_bg.jpg) center no-repeat;
+  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -172,8 +202,8 @@ body h1, * h1 {
 
 .hero button {
   border: none;
-  color: #fff;
-  background-color: #FFC100;
+  color: #FFC100;
+  background-color: #1E2D3B;
   padding: 10px 20px;
   text-transform: uppercase;
   border-radius: 6px;
@@ -182,8 +212,8 @@ body h1, * h1 {
 .hero button:hover {
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  background-color: #1E2D3B;
-  color: #FFC100;
+  background-color: #FFC100;
+  color: #fff;
 }
 
 .service {

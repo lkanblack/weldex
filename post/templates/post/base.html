@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
 	<title>Weldex Group OÜ</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
@@ -17,16 +17,16 @@
 			<div class="row">
 				<div class="col-md-2">
 					<div class="header_logo">
-						<p>Weldex.</p>
+						<a href="{% url 'post_list' %}"><p>Weldex.</p></a>
 					</div>
 				</div>
 				<div class="col-md-8">
 					<div class="header_content">
-						<a href="./index.html"><p>esileht</p></a>
-						<a href="#" id="nav_offer"><p>Teenused</p></a>
-						<a href="#" id="nav_about"><p>meist</p></a>
+						<a href="{% url 'post_list' %}"><p>esileht</p></a>
+						<a href="#service"><p>Teenused</p></a>
+						<a href="#about"><p>meist</p></a>
 						<a href="{% url 'gallery' %}" id="nav_projects"><p>projektid</p></a>
-						<a href="#" id="nav_contact"><p>kontakt</p></a>
+						<a href="#contact"><p>kontakt</p></a>
 					</div>
 				</div>
 				<div class="col-md-2">
@@ -54,11 +54,11 @@
             </div>
           </div>
       		<p>© 2020 «Welding Group OÜ» Kõik õigused on kaitstud.</p>
-      		<a href=""><i class="fab fa-facebook"></i></a>
+      		<a href="https://www.facebook.com/fmwelding/" target="_blank"><i class="fab fa-facebook"></i></a>
       	</div>
-        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 </body>
 </html>
