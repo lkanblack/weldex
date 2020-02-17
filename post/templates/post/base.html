@@ -42,6 +42,19 @@
 		</div>
 	</div>
 	
+	<div class="burger_menu">
+        	<img class="burger_open" src="../../static/img/burger/menu.svg" alt="MENU">
+        	<img class="burger_close" src="../../static/img/burger/close.svg" alt="CLOSE">
+        	<div class="burger_content">
+        		<a href="{% url 'post_list' %}"><p>esileht</p></a>
+        		<a href="#service"><p>Teenused</p></a>
+        		<a href="#about"><p>meist</p></a>
+        		<a href="{% url 'gallery' %}"><p>projektid</p></a>
+        		<a href="#contact"><p>kontakt</p></a>
+			<a class="burger_content_gold" href="./eng.html"><p>ENG</p></a>
+			<a class="burger_content_gold" href="./rus.html"><p>RUS</p></a>
+        	</div>
+	</div>
 	
 	{% block content %}
     {% endblock %}
@@ -60,5 +73,6 @@
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+		<script src="../../static/js/script.js"></script>
 </body>
 </html>

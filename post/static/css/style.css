@@ -16,6 +16,10 @@ body h1, * h1 {
   padding: 100px 0px 50px 0;
 }
 
+.gallery .col-md-4 {
+  margin-bottom: 30px;
+}
+
 .gallery img {
   width: 100%;
 }
@@ -168,6 +172,58 @@ body h1, * h1 {
   text-decoration: none;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+}
+
+.burger_menu {
+  min-height: 7vh;
+  min-width: 100vw;
+  background-color: #1E2D3B;
+  color: #1E2D3B;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 10;
+  position: absolute;
+  position: fixed;
+  display: none;
+}
+
+.burger_menu img {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.burger_content {
+  color: #fff;
+  padding: 10px;
+  height: 100vh;
+  text-transform: capitalize;
+}
+
+.burger_content a, .burger_content p {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 0px;
+  font-size: 24px;
+}
+
+.burger_content a:hover, .burger_content p:hover {
+  text-decoration: none;
+}
+
+.burger_content a:focus, .burger_content p:focus {
+  outline: none;
+}
+
+.burger_content .burger_content_gold {
+  margin-top: 25px;
+  padding: 5px;
+}
+
+.burger_content .burger_content_gold p {
+  color: #FFC100 !important;
+  display: inline-block;
+  font-size: 20px;
 }
 
 .hero {
