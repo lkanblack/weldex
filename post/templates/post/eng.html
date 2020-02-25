@@ -73,12 +73,12 @@
     							<hr>
     						</div>
     					<div class="row">
-                        {% for post in posts %}
+                        {% for post in engs %}
     						<div class="col-xs-12 col-sm-6 col-md-4">
     							<div class="service_block">
     							<div class="service_block_descr">
-    								<h5>{{ post.title }}</h5>
-    								<p>{{ post.text }}</p>
+    								<h5>{{ post.titleENG }}</h5>
+    								<p>{{ post.textENG }}</p>
 									<img src="{{ post.image.url}}" alt="{{ post.title }}">
     							</div>
     						</div>
