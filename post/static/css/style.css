@@ -269,7 +269,15 @@ body h1, * h1 {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   background-color: #FFC100;
+}
+
+.hero button:hover a {
   color: #fff;
+  text-decoration: none;
+}
+
+.hero button a {
+  color: #FFC100;
 }
 
 .service {
@@ -560,6 +568,16 @@ body h1, * h1 {
   transition: 0.3s;
 }
 
+.contact_descr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px;
+}
+
 .mobile_info {
   display: none;
 }
@@ -663,6 +681,9 @@ body h1, * h1 {
 }
 
 @media (max-width: 768px) {
+  h1 {
+    font-size: 25px !important;
+  }
   .header {
     display: none;
   }
@@ -686,6 +707,37 @@ body h1, * h1 {
   .mobile_info {
     display: block;
   }
+  .about_img {
+    display: none;
+  }
+  .project .container {
+    max-width: 100%;
+  }
+  .project_block a, .project_block button {
+    opacity: 1;
+  }
+  .clients_descr img {
+    width: 20%;
+  }
+}
+
+@media (max-width: 767px) {
+  .mobile_info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 20px;
+  }
+  .service_block_descr {
+    padding: 10px 15px;
+  }
 }
 
 @media (max-width: 760px) {
@@ -708,19 +760,6 @@ body h1, * h1 {
   .main h1 {
     color: #FFC100;
   }
-  video, #myVideo {
-    display: none;
-  }
-  .fullscreen-video-wrap {
-    background: url(../img/header/weld.jpeg) center no-repeat;
-    background-size: cover;
-  }
-  .project_block {
-    height: 70vh;
-  }
-  .project_block:nth-child(odd) {
-    display: none;
-  }
 }
 
 @media (max-width: 500px) {
@@ -735,8 +774,6 @@ body h1, * h1 {
   }
   .contact_fields {
     width: 100%;
-    padding: 10px;
-    margin-left: 20px;
   }
   .contact_info {
     display: none;

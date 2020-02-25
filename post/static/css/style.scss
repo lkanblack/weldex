@@ -199,7 +199,13 @@ body, * {
         &:hover {
             transition: 0.3s;
             background-color:#FFC100;
-            color: #fff;
+            a {
+              color: #fff;
+              text-decoration: none;
+            }
+        }
+        a {
+          color: #FFC100;
         }
     }
     
@@ -328,10 +334,6 @@ body, * {
     }
   }
   
-
-
-
-
   .contact {
 
     &_form {
@@ -421,6 +423,11 @@ body, * {
         }
       }
       
+    }
+    &_descr {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
     }
 
   }
@@ -519,6 +526,9 @@ body, * {
   }
   
   @media (max-width: 768px) {
+    h1 {
+      font-size: 25px !important;
+    }
     .header {
       display: none;
     }
@@ -548,8 +558,46 @@ body, * {
     .mobile_info {
       display: block;
     }
+    .about {
+      &_img {
+        display: none;
+      }
+    }
+    .project {
+      .container {
+        max-width: 100%;
+      }
+      &_block {
+        a, button {
+          opacity: 1;
+        }
+      }
+    }
+    .clients {
+      &_descr {
+        img {
+          width: 20%;
+        }
+      }
+    }
   }
   
+  @media (max-width: 767px){
+    .mobile_info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+    }
+    .service {
+      &_block {
+        &_descr {
+          padding: 10px 15px;
+        }
+      }
+    }
+  }
+
   @media (max-width: 760px) {
     .contact_fields {
       width: 100%;
@@ -574,22 +622,6 @@ body, * {
       color: #FFC100;
     }
   
-    video, #myVideo {
-      display: none;
-    }
-  
-    .fullscreen-video-wrap {
-      background: url(../img/header/weld.jpeg) center no-repeat;
-      background-size: cover;
-    }
-  
-    .project_block {
-      height: 70vh;
-  
-      &:nth-child(odd) {
-        display: none;
-      }
-    }
   }
   
   @media (max-width: 500px) {
@@ -605,8 +637,6 @@ body, * {
   
     .contact_fields {
       width: 100%;
-      padding: 10px;
-      margin-left: 20px;
     }
   
     .contact_info {
