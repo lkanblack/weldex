@@ -31,11 +31,11 @@
 				</div>
 				<div class="col-md-2">
 					<div class="header_select">
-						<a href="#" class="active">EE</a> 
+						<a href="{% url 'post_list' %}" class="active">EE</a> 
 						<span>/</span>
-						<a href="#">RU</a> 
+						<a href="{% url 'rus' %}">RU</a> 
 						<span>/</span>
-						<a href="#">EN</a>
+						<a href="{% url 'eng' %}">EN</a>
 					</div>
 				</div>
 			</div>
@@ -51,8 +51,9 @@
         		<a href="#about"><p>meist</p></a>
         		<a href="{% url 'gallery' %}"><p>projektid</p></a>
         		<a href="#contact"><p>kontakt</p></a>
-			<a class="burger_content_gold" href="./eng.html"><p>ENG</p></a>
-			<a class="burger_content_gold" href="./rus.html"><p>RUS</p></a>
+			<a class="burger_content_gold" href="{% url 'post_list' %}"><p>EE</p></a>
+			<a class="burger_content_gold" href="{% url 'rus' %}"><p>RU</p></a>
+			<a class="burger_content_gold" href="{% url 'eng' %}"><p>EN</p></a>
         	</div>
 	</div>
 	

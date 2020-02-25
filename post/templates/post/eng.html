@@ -1,0 +1,143 @@
+    {% extends 'post/base.html' %}
+    {% block content %}
+    	<div class="hero" id="hero">
+    		<div class="container-fluid">
+    			<div class="row">
+    				<h1>Weldex Group OÜ</h1>
+    				<button>about</button>
+    			</div>
+    		</div>
+    	</div>
+    	<div class="service" id="service">
+    			<div class="container">
+    					<div class="title" id="service">
+    							<h1>Services</h1>
+    							<hr>
+    						</div>
+    					<div class="row">
+                        {% for post in posts %}
+    						<div class="col-xs-12 col-sm-6 col-md-4">
+    							<div class="service_block">
+    							<div class="service_block_descr">
+    								<h5>{{ post.title }}</h5>
+    								<p>{{ post.text }}</p>
+									<img src="{{ post.image.url}}" alt="{{ post.title }}">
+    							</div>
+    						</div>
+    						</div>
+                    {% endfor %}
+    					</div>
+    				</div>
+    	</div>
+    
+    	<div class="about" id="about">
+    		<div class="container">
+    			<div class="title" id="about">
+    				<h1>meist</h1>
+    				<hr>
+    			</div>
+    			<div class="row">
+    				<div class="col-md-8">
+    					<div class="about_descr">
+    						<p>Meie väärtused: Kiirus, kvaliteet, tehnoloogilisus. Missioon: Ettevõtte areng innovatsioonide kasutuselevõtmise kaudu, keskendudes alati tarbijate vajadustele ja soovidele. Visioon: Saada metallitööstuse valdkonna ekspertide meeskonnaks</p>
+    						<p>2017.aastal asutatud firma F.M Welding OÜ pakub teenuseid metallitööstuse ja sepisekunsti valdkondades.</p>
+    						<p>Tänapäevased professionaalsed tööriistad, kõrge kvalifikatsiooniga spetsialistid, tingimuste ja normatiivsete ettekirjutuste range järgimine – need on kriteeriumid, mis tagavad keevitustööde õnnestumise.Välimuse esinduslikkuse säilimine keevisõmbluste kõrge tugevusteguri juures on tähtsaim tingimus, mille auto remontimise käigus ette tulevate keevitustöödega tegelev meister peab täitma. Keevitamise tehnoloogilise protsessi edukuse suudavad tagada ainult filigraanne täpsus ja professionaalne lähenemine selle kategooria tööde teostamisele.</p>
+    					</div>
+    				</div>
+    				<div class="col-md-4">
+    					<div class="about_img">
+							
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+		<div class="project" id="project">
+				<div class="container">
+					<div class="title" id="projects">
+						<h1>Projektid</h1>
+						<hr>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+						<div class="project_block">
+								<a href="{% url 'gallery' %}"><button>Ava Galerii</button></a>
+						</div>
+						</div>
+					</div>
+				</div>
+		</div>
+		<div class="clients" id="clients">
+			<div class="container">
+					<div class="title">
+						<h1>Meie kliendid</h1>
+						<hr>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="clients_descr">
+								<img src="../../static/img/clients/merko.png" alt="merko">
+								<img src="../../static/img/clients/maru.png" alt="maru">
+								<img src="../../static/img/clients/adven.png" alt="adven">
+								<img src="../../static/img/clients/logicon.png" alt="logicon">
+								<img src="../../static/img/clients/tavepro.png" alt="tavepro">
+								<img src="../../static/img/clients/moodul.png" alt="moodul">
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
+		<div class="contact" id="contact">
+			<div class="container-fluid">
+					<div class="title">
+						<h1>kontakt</h1>
+						<hr>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="contact_descr">
+								<div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="390" id="gmap_canvas" src="https://maps.google.com/maps?q=Tornim%C3%A4e%205%2C%2010145%20Tallinn&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.bitgeeks.net">bitgeeks</a></div><style>.mapouter{position:relative;text-align:right;height:390px;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:390px;width:100%;}</style></div>
+							</div>
+						</div>
+					</div>
+					<div class="container">
+						<div class="row">
+
+						<div class="col-md-6">
+							<div class="contact_fields">
+								<h3>Vastame Teie küsimustele</h3>
+								<p>Hea meelega vastame Teie küsimustele telefoni teel: <br> <a href="tel:+37256906471"><span>+372 56 906 471</span></a><br>Samuti võite saata oma küsimused allpool oleva vormi abil.<br></p>
+							
+							<form class="form" id="form" name="form">
+							<input class="wow animated slideInLeft" type="text" placeholder="Nimi" name="name" required>
+							<input class="wow animated slideInLeft" type="text" placeholder="e-mail" name="mail" required>
+							<textarea class="wow animated slideInLeft" type="text" cols="30" rows="10" placeholder="Kommentaar" name="message" required></textarea>
+							<button class="form-button contact_button wow animated slideInLeft">Esita</button>
+							</form>
+						</div>
+						</div>
+						<div class="col-md-6">
+							<div class="mobile_info">
+								<p>Võidujooksu 7a </p>
+								<p>Tornimäe 5, 10145 Tallinn</p>
+								<p>info@fmwelding.ee</p>
+							</div>
+							<div class="contact_info">
+								<h3>Kontakt</h3>
+								<p></p>
+							<p>Tornimäe 5, 10145 Tallinn</p>
+							<p>info@fmwelding.ee</p>
+							<p>+372 56 906 471</p>
+							<br>
+							<h3>Soovite teha koostööd?</h3>
+							<p>Palun saatke oma soovid ja ettepanekud aadressil:&nbsp;<a href="">info@fmwelding.ee</a></p>
+							<br>
+							<h5>Helistage:<a href=""> +372 56 906 471</a></h5>
+							</div>
+						</div>
+						</div>
+					</div>
+			</div>
+		</div>
+          	
+{% endblock %}

@@ -11,4 +11,13 @@ def post_list(request):
 def gallery(request):
     gallerys = Gallery.objects.all()
     return render(request, 'post/gallery.html', {'gallerys': gallerys})
+    
 
+def rus(request):
+    russians = Post.objects.all()
+    return render(request, 'post/rus.html', {'russians': russians})
+
+
+def eng(request):
+    engs = Post.objects.all()
+    return render(request, 'post/eng.html', {'engs': engs})
