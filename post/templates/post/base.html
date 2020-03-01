@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="{% static 'cookies/jquery.cookieBar.min.css' %}">
 </head>
 <body>
     <div class="header">
@@ -25,7 +26,7 @@
 						<a href="{% url 'post_list' %}"><p>esileht</p></a>
 						<a href="#service"><p>Teenused</p></a>
 						<a href="#about"><p>meist</p></a>
-						<a href="{% url 'gallery' %}" id="nav_projects"><p>projektid</p></a>
+						<a href="{% url 'gallery' %}" id="nav_projects"><p>referentsid</p></a>
 						<a href="#contact"><p>kontakt</p></a>
 					</div>
 				</div>
@@ -49,7 +50,7 @@
         		<a href="{% url 'post_list' %}"><p>esileht</p></a>
         		<a href="#service"><p>Teenused</p></a>
         		<a href="#about"><p>meist</p></a>
-        		<a href="{% url 'gallery' %}"><p>projektid</p></a>
+        		<a href="{% url 'gallery' %}"><p>referentsid</p></a>
         		<a href="#contact"><p>kontakt</p></a>
 			<a class="burger_content_gold" href="{% url 'post_list' %}"><p>EE</p></a>
 			<a class="burger_content_gold" href="{% url 'rus' %}"><p>RU</p></a>
@@ -74,6 +75,19 @@
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-		<script src="../../static/js/script.js"></script>
+		<script src="{% static '/js/script.js' %}"></script>
+		<script src="{% static '/cookies/jquery.cookieBar.min.js' %}"></script>
+		<script src="{% static '/cookies/jquery.cookieBar.js' %}"></script>
+		<script>
+			$(function() {
+				
+				$.cookieBar({
+					
+					style: 'bottom',
+					language: 'et'
+				});
+
+			});
+		</script>
 </body>
 </html>
