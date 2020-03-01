@@ -1,5 +1,5 @@
 <?php
-$recepient = "andrei.dubinko@gmail.com";
+$recepient = "info@weldex.ee";
 $siteName = "Weldex Group";
 
 $name = trim($_POST["name"]);

@@ -597,6 +597,10 @@ body h1, * h1 {
   color: #fff;
 }
 
+.footer-social a {
+  margin-left: 15px;
+}
+
 .footer p {
   line-height: 40px;
   font-size: 12px !important;

@@ -444,6 +444,11 @@ body, * {
     padding: 0 35px;
     align-content: center;
     color: #fff;
+    &-social {
+      a {
+        margin-left: 15px;
+      }
+    }
     p {
       line-height: 40px;
       font-size: 12px !important;
